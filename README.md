@@ -75,6 +75,7 @@ Commands:
 Structure of a command:
 
 Stacks - If a green pixel is in the command it represents a stack usage - where the d's are in the diagram below it represents the data stack while y and x are the y and x axes of the screen position stack
+
 dddd
 
 dyyd
@@ -85,6 +86,7 @@ dddd
 
 
 Flow - black or purple in these positions represent a movement of 4 (a whole instruction) in the following directions: f - forward by 4 (y axis), b - backward by 4 (y axis), l - left by 4 (x axis), r - right by 4 (x axis), u - up by one (next frame, z axis), d - down by one (last frame, z axis) 
+
 lf f f rf
 
 l  d u  r
@@ -96,6 +98,7 @@ lb b b rb
 
 Data can be read from any of the edges of the square (not corners) as the number of adjacent pixels matching the colour that is adjacent outwards from the square are totaled and that is the value the data input represents.
 e.g.
+
 xxxx
 
 xxxma
